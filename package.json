@@ -1,0 +1,17 @@
+{
+  "name": "api-bug-reproducer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A deterministic, bounded API bug reproduction workbench.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "demo": "node --experimental-strip-types scripts/demo.ts",
+    "dev": "node --experimental-strip-types src/server.ts",
+    "lint": "node scripts/check-source.mjs",
+    "typecheck": "node scripts/typecheck.mjs",
+    "test": "node --experimental-strip-types --test test/*.test.ts"
+  }
+}
